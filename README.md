@@ -38,3 +38,66 @@ Requirement Analysis is paramount to the success of any software project for sev
 7.  **Manages Scope Creep:** By clearly defining what is (and isn't) in scope, requirement analysis helps control "scope creep" – the uncontrolled growth of a project's scope – which can derail projects. Any new requests can be evaluated against the baseline requirements.
 
 In essence, a robust requirement analysis phase lays the groundwork for a successful software project, ensuring that the development effort is focused, efficient, and ultimately delivers value to the end-users.
+
+## Key Activities in Requirement Analysis
+
+Requirement analysis is a multi-faceted process composed of several interconnected activities. Each activity plays a vital role in transforming initial ideas into a clear and actionable set of requirements for software development.
+
+### Requirement Gathering
+
+This is the initial phase where all potential information, needs, and constraints related to the software system are collected. It involves understanding the project's scope, objectives, and the problems it aims to solve from various perspectives.
+
+* **Objective:** To cast a wide net and collect all possible requirements from all available sources.
+* **Sources:** Stakeholders (users, clients, business owners), existing systems, documentation, market research, industry standards.
+* **Methods:** Brainstorming sessions, informal discussions, reviewing existing artifacts.
+
+### Requirement Elicitation
+
+Following the broader gathering, elicitation focuses on actively drawing out detailed and specific requirements from stakeholders. It's about getting beneath surface-level requests to understand the true underlying needs.
+
+* **Objective:** To extract explicit and implicit needs from stakeholders in a structured manner.
+* **Techniques:**
+    * **Interviews:** One-on-one or group discussions with key stakeholders.
+    * **Workshops (JAD/RAD sessions):** Collaborative sessions involving multiple stakeholders to define and refine requirements.
+    * **Surveys/Questionnaires:** Used for collecting input from a large number of stakeholders.
+    * **Observation:** Observing users performing their tasks in their natural environment to identify implicit needs.
+    * **Prototyping/Mock-ups:** Creating preliminary versions of the system to get early feedback.
+    * **Document Analysis:** Reviewing existing system documentation, business process manuals, and regulations.
+
+### Requirement Documentation
+
+Once requirements have been gathered and elicited, they must be formally recorded in a clear, unambiguous, and consistent manner. This creates a single source of truth for the project.
+
+* **Objective:** To systematically record all agreed-upon requirements for the software system.
+* **Formats:**
+    * **Functional Requirements Specification (FRS):** Details what the system *must do*.
+    * **Non-Functional Requirements (NFRs):** Defines how the system *should perform* (e.g., performance, security, usability, scalability).
+    * **Use Cases:** Describes interactions between users (actors) and the system to achieve a specific goal.
+    * **User Stories:** Short, simple descriptions of a feature told from the perspective of the user.
+    * **Data Models:** Illustrates the structure of data and relationships between entities.
+    * **System Flow Diagrams:** Visualizes the sequence of operations or data flow.
+
+### Requirement Analysis and Modeling
+
+This activity involves a deep dive into the documented requirements to scrutinize their quality, resolve conflicts, identify dependencies, and represent them in various models to gain a clearer understanding.
+
+* **Objective:** To refine, clarify, categorize, and prioritize requirements, and to represent them using various models.
+* **Activities:**
+    * **Clarity and Completeness Check:** Ensuring all requirements are understandable and nothing is missing.
+    * **Consistency Check:** Identifying and resolving contradictions between requirements.
+    * **Feasibility Assessment:** Evaluating whether requirements are technically and economically achievable within project constraints.
+    * **Prioritization:** Ranking requirements based on business value, effort, risk, and dependencies.
+    * **Conflict Resolution:** Mediating disagreements among stakeholders regarding specific requirements.
+    * **Modeling:** Creating diagrams and models (e.g., UML diagrams, data flow diagrams, state diagrams) to visualize system behavior and structure, making complex requirements easier to understand.
+
+### Requirement Validation
+
+The final critical step is to confirm that the documented requirements accurately reflect the true needs of the stakeholders and align with the project's overall goals. This is a crucial checkpoint before moving to design and development.
+
+* **Objective:** To ensure that the defined requirements are correct, complete, consistent, unambiguous, and traceable, and that they will lead to a system that meets stakeholder needs.
+* **Techniques:**
+    * **Reviews/Walkthroughs:** Presenting the documented requirements to stakeholders for formal review and feedback.
+    * **Prototyping:** Demonstrating working models of parts of the system to gather early feedback and confirm understanding.
+    * **Test Case Generation:** Developing test cases based on requirements to check their verifiability.
+    * **Requirement Traceability:** Linking requirements to design elements, code, and test cases to ensure all requirements are addressed.
+    * **Checklists:** Using predefined criteria to assess the quality of requirements.
