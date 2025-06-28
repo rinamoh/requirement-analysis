@@ -101,3 +101,57 @@ The final critical step is to confirm that the documented requirements accuratel
     * **Test Case Generation:** Developing test cases based on requirements to check their verifiability.
     * **Requirement Traceability:** Linking requirements to design elements, code, and test cases to ensure all requirements are addressed.
     * **Checklists:** Using predefined criteria to assess the quality of requirements.
+
+## Types of Requirements
+
+Software requirements are broadly categorized into two main types: Functional and Non-functional. Understanding both is essential for developing a comprehensive and effective software solution.
+
+### Functional Requirements
+
+Functional requirements define what the system **must do**. They describe the specific behaviors or functions of the software, detailing how the system should react to particular inputs, how it should behave in specific situations, and what capabilities it provides to users.
+
+**Examples for the Booking Management Project (like Airbnb):**
+
+* **User Authentication and Authorization:**
+    * The system must allow users to **sign up** for a new account using email or phone number.
+    * The system must allow registered users to **sign in** to their accounts.
+    * The system must differentiate between "client" and "worker" (hotel manager/owner) roles and provide appropriate access.
+* **Property Management (for Hotel Managers/Owners):**
+    * Hotel managers/owners must be able to **manage their hotel's related information**, including accessing and updating data (e.g., adding new hotels, editing existing details, updating availability).
+* **Customer Service (Search & Booking):**
+    * Customers must be able to **search for hotels** based on various criteria (e.g., location, dates, price, amenities).
+    * Customers must be able to **view detailed information** about a specific hotel listing.
+    * Customers must be able to **book a hotel** for specified dates and guest numbers.
+    * The system must integrate with a **third-party payment service** to process bookings.
+* **Booking Viewing:**
+    * Customers must be able to **view their current and past booking details**.
+    * Hotel managers/owners must be able to **view current and past booking details** for their properties.
+* **Notifications:**
+    * The system must send **notifications** to hotel managers when a new booking is made for their property.
+    * The system must send **notifications** to customers about new offers or booking confirmations.
+
+### Non-functional Requirements
+
+Non-functional requirements specify **how the system performs** a particular function or operates in general. They describe the quality attributes of a system and the constraints under which it must operate. These requirements are often just as critical as functional ones for user satisfaction and system success.
+
+**Examples for the Booking Management Project (like Airbnb):**
+
+* **Performance & Scalability:**
+    * The system must be able to **process a high amount of user traffic** without significant degradation in performance.
+    * The system must **reduce the load on the primary database** for read operations by utilizing master-slave replication and caching.
+    * API response times should be **minimized** to provide a smooth user experience (e.g., through caching with Redis).
+    * The system must be capable of **handling a high volume of historical booking data** for archival purposes (e.g., using Cassandra).
+    * Content delivery (e.g., images, nearby hotel listings, recommendations, offers) must be **fast** due to a geographically distributed network (CDN).
+* **Reliability & Availability:**
+    * The system must operate **"without a single glitch"** from hotel listing to booking and payment.
+    * The database architecture (e.g., master-slave) should ensure **high availability** and data redundancy.
+* **Maintainability & Modularity:**
+    * The system should be designed using a **micro-service architecture** to facilitate independent development, deployment, and scaling of different services (e.g., Hotel Management Service, Customer Service, View Booking Service).
+* **Usability:**
+    * The application must provide a **smooth and intuitive flow** from hotel listing to booking and payments.
+* **Security (Implicit, but critical for a booking/fintech app):**
+    * Payment processing must be **secure**.
+* **Data Management:**
+    * The system must efficiently **sync data** between master and slave databases for consistency.
+    * The system must be able to **manage and process data updates** from various services (e.g., via a Messaging Queue System like Kafka/RabbitMQ).
+    * The search functionality must rely on a database optimized for search engine functionality (e.g., Elasticsearch).
