@@ -19,7 +19,7 @@ The process typically includes:
 
 * **Management:** Continuously tracking, prioritizing, and controlling changes to requirements throughout the project lifecycle.
 
-### Importance in the Software Development Lifecycle (SDLC)
+### Why is Requirement Analysis Important?
 
 Requirement Analysis is paramount to the success of any software project for several reasons:
 
